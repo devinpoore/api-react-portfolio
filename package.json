@@ -19,7 +19,9 @@
   "homepage": "https://github.com/devinpoore/api-react-portfolio#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
-    "nodemailer": "^6.3.1"
+    "nodemailer": "^6.3.1",
+    "twilio": "^3.37.1"
   }
 }
