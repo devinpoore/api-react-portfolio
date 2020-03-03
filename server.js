@@ -21,7 +21,7 @@ app.post("/email", (req, res) => {
     // console.log(req.body);
 
     if (req.body) {
-        sendEmail(req.body)
+        sendEmail(req.body).catch(console.error);
     }
 
     res.json("Data received, email sent");
@@ -70,5 +70,3 @@ async function sendEmail(emailObj) {
 
     console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
 }
-
-sendEmail().catch(console.error);
